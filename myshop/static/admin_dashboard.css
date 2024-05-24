@@ -1,0 +1,131 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.admin-dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Adicionado para conter a animação */
+}
+
+/* Estilos do cabeçalho */
+.admin-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.admin-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px; /* Ajustado o espaçamento */
+}
+
+.logout-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* Adicionado efeito de transformação */
+}
+
+.logout-button:hover {
+    transform: scale(1.1); /* Efeito de escala no hover */
+}
+
+.logout-text {
+    margin-right: 5px;
+}
+
+/* Estilos do menu de administração */
+.admin-menu {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.admin-menu h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6b00; /* Cor de destaque */
+}
+
+.admin-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-menu ul li {
+    margin-bottom: 10px;
+}
+
+.admin-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    display: block;
+    padding: 8px; /* Aumentado o espaçamento interno */
+    border-radius: 5px;
+}
+
+.admin-menu ul li a:hover {
+    color: #ff6b00; /* Cor de destaque ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+}
+
+/* Estilos do conteúdo do painel de administração */
+.admin-content {
+    padding: 20px;
+}
+
+.admin-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-content p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Estilo para a mensagem */
+.mensagem {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block; /* Adicionado para alinhar com o texto */
+}
+
+/* Estilo para a mensagem de sucesso */
+.mensagem-sucesso {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Estilo para a mensagem de erro */
+.mensagem-erro {
+    background-color: #f44336;
+    color: #fff;
+}
